@@ -8,6 +8,7 @@ Here is instructions on how to set up and run the code:
 
 Changing paramters in the code:
 - There should be comments wihtin the code that are noted by ' // ' these will tell you which variable changes what.
+- Comments noted by ' // # ' are going to be used for explaining what each part of the code does
 
 Connecting the Arduino to the LED
 - ensure the LED is first connected to ground and either the V or the 3.5V
