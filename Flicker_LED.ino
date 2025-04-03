@@ -15,16 +15,22 @@
  void loop() {
    int numToTrigger = random(1, NUM_LEDS + 1); //#  Random number of LEDs to trigger sequentially
    int intensity = numToTrigger * 12 ; //# makes the number triggered proportional to the internsity of the light 
-   int color = random(90,270); // values which the LED could be 
+   int color = random(85,212); // values which the LED could be 
    for (int i = 0; i < numToTrigger; i++) {  
      leds[i] = CHSV(color, 200, intensity);  // Inside CHSV() can change the colors according to HSV Color model
      FastLED.show();
-     delay(100);  // How long the LED stays on 
+     delay(10);  // How long the LED stays on leds[i] = CHSV(color, 200, intensity);  // Inside CHSV() can change the colors according to HSV Color model
+
+     leds[i+1] = CHSV(color, 200, intensity);  // Inside CHSV() can change the colors according to HSV Color model
+     FastLED.show();
+     delay(10);  // How long the LED stays on leds[i] = CHSV(color, 200, intensity);  // Inside CHSV() can change the colors according to HSV Color model
  
-    //  leds[i] = CHSV(0, 0, 0); 
      leds[i] = CHSV(0, 0, 0);  //#  Turn off LED after delay
      FastLED.show();
-     delay(200); // How long till next LED gets triggered
+     delay(50); // How long till next LED gets triggered
+    //  leds[i+1] = CHSV(0, 0, 0);  //#  Turn off LED after delay
+    //  FastLED.show();
+    //  delay(200); // How long till next LED gets triggered
    }
  
    delay(random(0, 1000));  // Pause before next cycle
