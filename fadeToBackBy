@@ -100,7 +100,7 @@
  
      leds3[i] = CHSV(0, 0, 0);  //#  Turn off LED after delay
      FastLED.show();
-     delay(10)
+     delay(10);
      fadeToBlackBy(&leds3[i+1], 1, 80);
      delay(50); // How long till next LED gets triggered
     //  leds[i+1] = CHSV(0, 0, 0);  //#  Turn off LED after delay
@@ -123,7 +123,7 @@
  
      leds4[i] = CHSV(0, 0, 0); //#  Turn off LED after delay
      FastLED.show();
-     delay(10)
+     delay(10);
      fadeToBlackBy(&leds4[i+1], 1, 80);
      delay(50); // How long till next LED gets triggered
     //  leds[i+1] = CHSV(0, 0, 0);  //#  Turn off LED after delay
@@ -147,7 +147,7 @@
  
      leds5[i] = CHSV(0, 0, 0); //#  Turn off LED after delay
      FastLED.show();
-     delay(10)
+     delay(10);
      fadeToBlackBy(&leds5[i+1], 1, 80);
      delay(50); // How long till next LED gets triggered
     //  leds[i+1] = CHSV(0, 0, 0);  //#  Turn off LED after delay
@@ -170,7 +170,7 @@
  
      leds6[i] = CHSV(0, 0, 0);  //#  Turn off LED after delay
      FastLED.show();     
-     delay(10)
+     delay(10);
      fadeToBlackBy(&leds6[i+1], 1, 80);
      delay(50); // How long till next LED gets triggered
     //  leds[i+1] = CHSV(0, 0, 0);  //#  Turn off LED after delay
@@ -193,7 +193,7 @@
  
      leds7[i] = CHSV(0, 0, 0);  //#  Turn off LED after delay
      FastLED.show();
-     delay(10)
+     delay(10);
      fadeToBlackBy(&leds7[i+1], 1, 80);
      delay(50); // How long till next LED gets triggered
     //  leds[i+1] = CHSV(0, 0, 0);  //#  Turn off LED after delay
@@ -215,7 +215,7 @@
  
      leds8[i] = CHSV(0, 0, 0);  //#  Turn off LED after delay
      FastLED.show();
-     delay(10)
+     delay(10);
      fadeToBlackBy(&leds8[i+1], 1, 80);
      delay(50); // How long till next LED gets triggered
     //  leds[i+1] = CHSV(0, 0, 0);  //#  Turn off LED after delay
@@ -238,7 +238,7 @@
  
      leds9[i] = CHSV(0, 0, 0); //#  Turn off LED after delay
      FastLED.show();
-     delay(10)
+     delay(10);
      fadeToBlackBy(&leds9[i+1], 1, 80);
      delay(50); // How long till next LED gets triggered
     //  leds[i+1] = CHSV(0, 0, 0);  //#  Turn off LED after delay
@@ -261,7 +261,7 @@
  
      leds10[i] = CHSV(0, 0, 0);  //#  Turn off LED after delay
      FastLED.show();
-     delay(10)
+     delay(10);
      fadeToBlackBy(&leds10[i+1], 1, 80);
      delay(50); // How long till next LED gets triggered
     //  leds[i+1] = CHSV(0, 0, 0);  //#  Turn off LED after delay
@@ -284,7 +284,7 @@
  
      leds11[i] = CHSV(0, 0, 0);  //#  Turn off LED after delay
      FastLED.show();
-     delay(10)
+     delay(10);
      fadeToBlackBy(&leds11[i+1], 1, 80);
      delay(50); // How long till next LED gets triggered
     //  leds[i+1] = CHSV(0, 0, 0);  //#  Turn off LED after delay
