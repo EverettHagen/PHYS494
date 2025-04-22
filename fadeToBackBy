@@ -1,0 +1,298 @@
+#include <FastLED.h>
+ 
+
+//  #define LED_PIN 3    // The signal output pin
+//  #define LED_PIN2 4    // The signal output pin
+//  #define LED_PIN3 5    // The signal output pin
+ #define LED_PIN4 6    // The signal output pin
+ #define LED_PIN5 7    // The signal output pin
+ #define LED_PIN6 8    // The signal output pin
+ #define LED_PIN7 9 
+ #define LED_PIN8 10   
+ #define LED_PIN9 11
+ #define LED_PIN10 12
+ #define LED_PIN11 13   // The signal output pin
+ #define NUM_LEDS 21  // The number of LEDs you have
+
+
+ CRGB leds1[NUM_LEDS];
+ CRGB leds2[NUM_LEDS];
+ CRGB leds3[NUM_LEDS];
+ CRGB leds4[NUM_LEDS];
+ CRGB leds5[NUM_LEDS];
+ CRGB leds6[NUM_LEDS];
+ CRGB leds7[NUM_LEDS];
+ CRGB leds8[NUM_LEDS];
+ CRGB leds9[NUM_LEDS];
+ CRGB leds10[NUM_LEDS];
+ CRGB leds11[NUM_LEDS];
+ 
+ void setup() {
+  //  FastLED.addLeds<WS2812, LED_PIN, GRB>(leds1, NUM_LEDS);
+  //  FastLED.addLeds<WS2812, LED_PIN2, GRB>(leds2, NUM_LEDS);
+  //  FastLED.addLeds<WS2812, LED_PIN3, GRB>(leds3, NUM_LEDS);
+   FastLED.addLeds<WS2812, LED_PIN4, GRB>(leds4, NUM_LEDS);
+   FastLED.addLeds<WS2812, LED_PIN5, GRB>(leds5, NUM_LEDS);
+   FastLED.addLeds<WS2812, LED_PIN6, GRB>(leds6, NUM_LEDS);
+   FastLED.addLeds<WS2812, LED_PIN7, GRB>(leds7, NUM_LEDS);
+   FastLED.addLeds<WS2812, LED_PIN8, GRB>(leds8, NUM_LEDS);
+   FastLED.addLeds<WS2812, LED_PIN9, GRB>(leds9, NUM_LEDS);
+   FastLED.addLeds<WS2812, LED_PIN10, GRB>(leds10, NUM_LEDS);
+   FastLED.addLeds<WS2812, LED_PIN11, GRB>(leds11, NUM_LEDS);
+   randomSeed(analogRead(0)); //# Create random
+
+ }
+ 
+ void loop() {
+  // //LED 1
+  //  int numToTrigger = random(1, NUM_LEDS + 1); //#  Random number of LEDs to trigger sequentially
+  //  int intensity = numToTrigger * 12 ; //# makes the number triggered proportional to the internsity of the light 
+  //  int color = random(85,212); // values which the LED could be 
+  //  for (int i = 0; i < numToTrigger; i++) {  
+  //    leds1[i] = CHSV(color, 200, intensity); // Inside CHSV() can change the colors according to HSV Color model
+  //    FastLED.show();
+  //    delay(10);  // How long the LED stays on leds[i] = CHSV(color, 200, intensity);  // Inside CHSV() can change the colors according to HSV Color model
+
+  //    leds1[i+1] = CHSV(color, 200, intensity); // Inside CHSV() can change the colors according to HSV Color model
+  //    FastLED.show();
+  //    delay(10);  // How long the LED stays on leds[i] = CHSV(color, 200, intensity);  // Inside CHSV() can change the colors according to HSV Color model
+ 
+  //    leds1[i] = CHSV(0, 0, 0); //#  Turn off LED after delay
+  //    FastLED.show();
+  //    delay(50); // How long till next LED gets triggered
+  //   //  leds[i+1] = CHSV(0, 0, 0);  //#  Turn off LED after delay
+  //   //  FastLED.show();
+  //   //  delay(200); // How long till next LED gets triggered
+  //  }
+  // //LED 2
+  //  int numToTrigger2 = random(1, NUM_LEDS + 1); //#  Random number of LEDs to trigger sequentially
+  //  int intensity2 = numToTrigger2 * 12 ; //# makes the number triggered proportional to the internsity of the light 
+  //  int color2 = random(85,212); // values which the LED could be 
+  //  for (int i = 0; i < numToTrigger2; i++) {   
+  //    leds2[i] = CHSV(color2, 200, intensity2);// Inside CHSV() can change the colors according to HSV Color model
+  //    FastLED.show();
+  //    delay(10);  // How long the LED stays on leds[i] = CHSV(color, 200, intensity);  // Inside CHSV() can change the colors according to HSV Color model
+
+  //    leds2[i+1] = CHSV(color2, 200, intensity2); // Inside CHSV() can change the colors according to HSV Color model
+  //    FastLED.show();
+  //    delay(10);  // How long the LED stays on leds[i] = CHSV(color, 200, intensity);  // Inside CHSV() can change the colors according to HSV Color model
+ 
+  //    leds2[i] = CHSV(0, 0, 0); //#  Turn off LED after delay
+  //    FastLED.show();
+  //    delay(50); // How long till next LED gets triggered
+  //   //  leds[i+1] = CHSV(0, 0, 0);  //#  Turn off LED after delay
+  //   //  FastLED.show();
+  //   //  delay(200); // How long till next LED gets triggered
+  //  }
+ 
+  // //LED 3
+   int numToTrigger3 = random(1, NUM_LEDS + 1); //#  Random number of LEDs to trigger sequentially
+   int intensity3 = numToTrigger3 * 12 ; //# makes the number triggered proportional to the internsity of the light 
+   int color3 = random(85,212); // values which the LED could be 
+   for (int i = 0; i < numToTrigger3; i++) {  
+     leds3[i] = CHSV(color3, 200, intensity3); // Inside CHSV() can change the colors according to HSV Color model
+     FastLED.show();
+     delay(10);  // How long the LED stays on leds[i] = CHSV(color, 200, intensity);  // Inside CHSV() can change the colors according to HSV Color model
+
+     leds3[i+1] = CHSV(color3, 200, intensity3);  // Inside CHSV() can change the colors according to HSV Color model
+     FastLED.show();
+     delay(10);  // How long the LED stays on leds[i] = CHSV(color, 200, intensity);  // Inside CHSV() can change the colors according to HSV Color model
+ 
+     leds3[i] = CHSV(0, 0, 0);  //#  Turn off LED after delay
+     FastLED.show();
+     delay(10)
+     fadeToBlackBy(&leds3[i+1], 1, 80);
+     delay(50); // How long till next LED gets triggered
+    //  leds[i+1] = CHSV(0, 0, 0);  //#  Turn off LED after delay
+    //  FastLED.show();
+    //  delay(200); // How long till next LED gets triggered
+   }
+
+  //LED 4
+   int numToTrigger4 = random(1, NUM_LEDS + 1); //#  Random number of LEDs to trigger sequentially
+   int intensity4 = numToTrigger4 * 12 ; //# makes the number triggered proportional to the internsity of the light 
+   int color4 = random(85,212); // values which the LED could be 
+   for (int i = 0; i < numToTrigger4; i++) {  
+     leds4[i] = CHSV(color4, 200, intensity4); // Inside CHSV() can change the colors according to HSV Color model
+     FastLED.show();
+     delay(10);  // How long the LED stays on leds[i] = CHSV(color, 200, intensity);  // Inside CHSV() can change the colors according to HSV Color model
+
+     leds4[i+1] = CHSV(color4, 200, intensity4); // Inside CHSV() can change the colors according to HSV Color model
+     FastLED.show();
+     delay(10);  // How long the LED stays on leds[i] = CHSV(color, 200, intensity);  // Inside CHSV() can change the colors according to HSV Color model
+ 
+     leds4[i] = CHSV(0, 0, 0); //#  Turn off LED after delay
+     FastLED.show();
+     delay(10)
+     fadeToBlackBy(&leds4[i+1], 1, 80);
+     delay(50); // How long till next LED gets triggered
+    //  leds[i+1] = CHSV(0, 0, 0);  //#  Turn off LED after delay
+    //  FastLED.show();
+    //  delay(200); // How long till next LED gets triggered
+   }
+ 
+
+  //LED 5
+   int numToTrigger5 = random(1, NUM_LEDS + 1); //#  Random number of LEDs to trigger sequentially
+   int intensity5 = numToTrigger5 * 12 ; //# makes the number triggered proportional to the internsity of the light 
+   int color5 = random(85,212); // values which the LED could be 
+   for (int i = 0; i < numToTrigger5; i++) {   
+     leds5[i] = CHSV(color5, 200, intensity5);// Inside CHSV() can change the colors according to HSV Color model
+     FastLED.show();
+     delay(10);  // How long the LED stays on leds[i] = CHSV(color, 200, intensity);  // Inside CHSV() can change the colors according to HSV Color model
+
+     leds5[i+1] = CHSV(color5, 200, intensity5); // Inside CHSV() can change the colors according to HSV Color model
+     FastLED.show();
+     delay(10);  // How long the LED stays on leds[i] = CHSV(color, 200, intensity);  // Inside CHSV() can change the colors according to HSV Color model
+ 
+     leds5[i] = CHSV(0, 0, 0); //#  Turn off LED after delay
+     FastLED.show();
+     delay(10)
+     fadeToBlackBy(&leds5[i+1], 1, 80);
+     delay(50); // How long till next LED gets triggered
+    //  leds[i+1] = CHSV(0, 0, 0);  //#  Turn off LED after delay
+    //  FastLED.show();
+    //  delay(200); // How long till next LED gets triggered
+   }
+ 
+  //LED 6
+   int numToTrigger6 = random(1, NUM_LEDS + 1); //#  Random number of LEDs to trigger sequentially
+   int intensity6 = numToTrigger6 * 12 ; //# makes the number triggered proportional to the internsity of the light 
+   int color6 = random(85,212); // values which the LED could be 
+   for (int i = 0; i < numToTrigger6; i++) {  
+     leds6[i] = CHSV(color6, 200, intensity6); // Inside CHSV() can change the colors according to HSV Color model
+     FastLED.show();
+     delay(10);  // How long the LED stays on leds[i] = CHSV(color, 200, intensity);  // Inside CHSV() can change the colors according to HSV Color model
+
+     leds6[i+1] = CHSV(color6, 200, intensity6);  // Inside CHSV() can change the colors according to HSV Color model
+     FastLED.show();
+     delay(10);  // How long the LED stays on leds[i] = CHSV(color, 200, intensity);  // Inside CHSV() can change the colors according to HSV Color model
+ 
+     leds6[i] = CHSV(0, 0, 0);  //#  Turn off LED after delay
+     FastLED.show();     
+     delay(10)
+     fadeToBlackBy(&leds6[i+1], 1, 80);
+     delay(50); // How long till next LED gets triggered
+    //  leds[i+1] = CHSV(0, 0, 0);  //#  Turn off LED after delay
+    //  FastLED.show();
+    //  delay(200); // How long till next LED gets triggered
+
+   }
+  //LED 7
+   int numToTrigger7 = random(1, NUM_LEDS + 1); //#  Random number of LEDs to trigger sequentially
+   int intensity7 = numToTrigger7 * 12 ; //# makes the number triggered proportional to the internsity of the light 
+   int color7 = random(85,212); // values which the LED could be 
+   for (int i = 0; i < numToTrigger7; i++) {  
+     leds7[i] = CHSV(color7, 200, intensity7); // Inside CHSV() can change the colors according to HSV Color model
+     FastLED.show();
+     delay(10);  // How long the LED stays on leds[i] = CHSV(color, 200, intensity);  // Inside CHSV() can change the colors according to HSV Color model
+
+     leds7[i+1] = CHSV(color7, 200, intensity7);  // Inside CHSV() can change the colors according to HSV Color model
+     FastLED.show();
+     delay(10);  // How long the LED stays on leds[i] = CHSV(color, 200, intensity);  // Inside CHSV() can change the colors according to HSV Color model
+ 
+     leds7[i] = CHSV(0, 0, 0);  //#  Turn off LED after delay
+     FastLED.show();
+     delay(10)
+     fadeToBlackBy(&leds7[i+1], 1, 80);
+     delay(50); // How long till next LED gets triggered
+    //  leds[i+1] = CHSV(0, 0, 0);  //#  Turn off LED after delay
+    //  FastLED.show();
+    //  delay(200); // How long till next LED gets triggered
+   }
+  //LED 8
+   int numToTrigger8 = random(1, NUM_LEDS + 1); //#  Random number of LEDs to trigger sequentially
+   int intensity8 = numToTrigger8 * 12 ; //# makes the number triggered proportional to the internsity of the light 
+   int color8 = random(85,212); // values which the LED could be 
+   for (int i = 0; i < numToTrigger8; i++) {  
+     leds8[i] = CHSV(color8, 200, intensity8); // Inside CHSV() can change the colors according to HSV Color model
+     FastLED.show();
+     delay(10);  // How long the LED stays on leds[i] = CHSV(color, 200, intensity);  // Inside CHSV() can change the colors according to HSV Color model
+
+     leds8[i+1] = CHSV(color8, 200, intensity8);  // Inside CHSV() can change the colors according to HSV Color model
+     FastLED.show();
+     delay(10);  // How long the LED stays on leds[i] = CHSV(color, 200, intensity);  // Inside CHSV() can change the colors according to HSV Color model
+ 
+     leds8[i] = CHSV(0, 0, 0);  //#  Turn off LED after delay
+     FastLED.show();
+     delay(10)
+     fadeToBlackBy(&leds8[i+1], 1, 80);
+     delay(50); // How long till next LED gets triggered
+    //  leds[i+1] = CHSV(0, 0, 0);  //#  Turn off LED after delay
+    //  FastLED.show();
+    //  delay(200); // How long till next LED gets triggered
+   }
+
+  //LED 9
+   int numToTrigger9 = random(1, NUM_LEDS + 1); //#  Random number of LEDs to trigger sequentially
+   int intensity9 = numToTrigger9 * 12 ; //# makes the number triggered proportional to the internsity of the light 
+   int color9 = random(85,212); // values which the LED could be 
+   for (int i = 0; i < numToTrigger9; i++) {   
+     leds9[i] = CHSV(color9, 200, intensity9);// Inside CHSV() can change the colors according to HSV Color model
+     FastLED.show();
+     delay(10);  // How long the LED stays on leds[i] = CHSV(color, 200, intensity);  // Inside CHSV() can change the colors according to HSV Color model
+
+     leds9[i+1] = CHSV(color9, 200, intensity9); // Inside CHSV() can change the colors according to HSV Color model
+     FastLED.show();
+     delay(10);  // How long the LED stays on leds[i] = CHSV(color, 200, intensity);  // Inside CHSV() can change the colors according to HSV Color model
+ 
+     leds9[i] = CHSV(0, 0, 0); //#  Turn off LED after delay
+     FastLED.show();
+     delay(10)
+     fadeToBlackBy(&leds9[i+1], 1, 80);
+     delay(50); // How long till next LED gets triggered
+    //  leds[i+1] = CHSV(0, 0, 0);  //#  Turn off LED after delay
+    //  FastLED.show();
+    //  delay(200); // How long till next LED gets triggered
+   }
+ 
+  //LED 10
+   int numToTrigger10 = random(1, NUM_LEDS + 1); //#  Random number of LEDs to trigger sequentially
+   int intensity10 = numToTrigger10 * 12 ; //# makes the number triggered proportional to the internsity of the light 
+   int color10 = random(85,212); // values which the LED could be 
+   for (int i = 0; i < numToTrigger10; i++) {  
+     leds10[i] = CHSV(color10, 200, intensity10); // Inside CHSV() can change the colors according to HSV Color model
+     FastLED.show();
+     delay(10);  // How long the LED stays on leds[i] = CHSV(color, 200, intensity);  // Inside CHSV() can change the colors according to HSV Color model
+
+     leds10[i+1] = CHSV(color10, 200, intensity10);  // Inside CHSV() can change the colors according to HSV Color model
+     FastLED.show();
+     delay(10);  // How long the LED stays on leds[i] = CHSV(color, 200, intensity);  // Inside CHSV() can change the colors according to HSV Color model
+ 
+     leds10[i] = CHSV(0, 0, 0);  //#  Turn off LED after delay
+     FastLED.show();
+     delay(10)
+     fadeToBlackBy(&leds10[i+1], 1, 80);
+     delay(50); // How long till next LED gets triggered
+    //  leds[i+1] = CHSV(0, 0, 0);  //#  Turn off LED after delay
+    //  FastLED.show();
+    //  delay(200); // How long till next LED gets triggered
+
+   }
+  //LED 11
+   int numToTrigger11 = random(1, NUM_LEDS + 1); //#  Random number of LEDs to trigger sequentially
+   int intensity11 = numToTrigger11 * 12 ; //# makes the number triggered proportional to the internsity of the light 
+   int color11 = random(85,212); // values which the LED could be 
+   for (int i = 0; i < numToTrigger11; i++) {  
+     leds11[i] = CHSV(color11, 200, intensity11); // Inside CHSV() can change the colors according to HSV Color model
+     FastLED.show();
+     delay(10);  // How long the LED stays on leds[i] = CHSV(color, 200, intensity);  // Inside CHSV() can change the colors according to HSV Color model
+
+     leds11[i+1] = CHSV(color11, 200, intensity11);  // Inside CHSV() can change the colors according to HSV Color model
+     FastLED.show();
+     delay(10);  // How long the LED stays on leds[i] = CHSV(color, 200, intensity);  // Inside CHSV() can change the colors according to HSV Color model
+ 
+     leds11[i] = CHSV(0, 0, 0);  //#  Turn off LED after delay
+     FastLED.show();
+     delay(10)
+     fadeToBlackBy(&leds11[i+1], 1, 80);
+     delay(50); // How long till next LED gets triggered
+    //  leds[i+1] = CHSV(0, 0, 0);  //#  Turn off LED after delay
+    //  FastLED.show();
+    //  delay(200); // How long till next LED gets triggered
+   }
+     delay(random(0, 60));
+ }
+ 
+ 
+ 
